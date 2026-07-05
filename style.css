@@ -1,0 +1,4137 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#050707;
+color:white;
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#101010;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#b99743;
+border-radius:50px;
+
+}
+
+/* =========================
+PAGE
+========================= */
+
+.page{
+
+display:none;
+min-height:100vh;
+padding:100px 8%;
+
+animation:fade .5s;
+
+}
+
+.page.active{
+
+display:block;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* =========================
+CONTAINER
+========================= */
+
+.container{
+
+width:100%;
+max-width:1300px;
+margin:auto;
+
+}
+
+/* =========================
+TOP BAR
+========================= */
+
+.topBar{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+height:80px;
+
+padding:0 50px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,.82);
+
+backdrop-filter:blur(12px);
+
+z-index:999;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+font-size:32px;
+
+font-family:'Cinzel',serif;
+
+color:#d4b15d;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+}
+
+.progress{
+
+width:340px;
+height:12px;
+
+background:#252525;
+
+border-radius:50px;
+
+overflow:hidden;
+
+}
+
+.progressFill{
+
+height:100%;
+
+width:0%;
+
+background:linear-gradient(90deg,#4fd36f,#d9bc5a);
+
+transition:.4s;
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding-top:70px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+
+font-family:'Cinzel',serif;
+
+font-weight:700;
+
+line-height:1.05;
+
+margin-bottom:15px;
+
+letter-spacing:2px;
+
+}
+
+.hero h1 span{
+
+display:block;
+
+font-size:52px;
+
+font-style:italic;
+
+color:#d7b862;
+
+font-family:'Poppins',sans-serif;
+
+font-weight:300;
+
+margin-top:10px;
+
+}
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:23px;
+
+line-height:1.8;
+
+color:#d6d6d6;
+
+margin-top:35px;
+
+}
+
+/* =========================
+BUTTON
+========================= */
+
+.mainButton{
+
+margin-top:60px;
+
+padding:22px 70px;
+
+border:none;
+
+border-radius:100px;
+
+background:linear-gradient(135deg,#d5b357,#f1da8d);
+
+color:#111;
+
+font-size:24px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:0 0 30px rgba(218,183,84,.25);
+
+}
+
+.mainButton span{
+
+display:block;
+
+font-size:16px;
+
+font-weight:500;
+
+margin-top:6px;
+
+}
+
+.mainButton:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 0 45px rgba(218,183,84,.45);
+
+}
+
+/* =========================
+FIELD REPORT TITLE
+========================= */
+
+.field{
+
+font-size:18px;
+
+letter-spacing:6px;
+
+color:#caa856;
+
+margin-bottom:20px;
+
+text-transform:uppercase;
+
+}
+
+.report-title{
+
+font-size:72px;
+
+font-family:'Cinzel',serif;
+
+font-weight:700;
+
+line-height:1;
+
+margin-bottom:15px;
+
+}
+
+.report-title span{
+
+display:block;
+
+margin-top:12px;
+
+font-size:28px;
+
+font-family:'Poppins',sans-serif;
+
+font-style:italic;
+
+font-weight:300;
+
+color:#d6ba73;
+
+}
+
+/* =========================
+TEXT
+========================= */
+
+.container p{
+
+font-size:21px;
+
+line-height:2;
+
+color:#e2e2e2;
+
+margin-top:25px;
+
+}
+
+/* =========================
+LAYOUT
+========================= */
+
+.split{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+margin-top:55px;
+
+}
+
+.imageBox{
+
+background:#111;
+
+border:2px solid rgba(212,177,93,.45);
+
+border-radius:24px;
+
+overflow:hidden;
+
+box-shadow:0 0 30px rgba(0,0,0,.35);
+
+}
+
+.imageBox img{
+
+display:block;
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+.factCard{
+
+background:#111616;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:24px;
+
+padding:35px;
+
+}
+
+.factCard h3{
+
+font-family:'Cinzel',serif;
+
+font-size:34px;
+
+color:#d4b15d;
+
+margin-bottom:25px;
+
+}
+
+.factCard ul{
+
+list-style:none;
+
+}
+
+.factCard li{
+
+padding:18px 0;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+font-size:20px;
+
+line-height:1.6;
+
+}
+
+.factCard li:last-child{
+
+border-bottom:none;
+
+}
+
+.factCard b{
+
+display:block;
+
+font-size:18px;
+
+color:white;
+
+margin-bottom:6px;
+
+}
+
+/* =========================
+DID YOU KNOW
+========================= */
+
+.didYouKnow{
+
+margin-top:45px;
+
+padding:35px;
+
+background:#201d12;
+
+border-left:6px solid #d4b15d;
+
+border-radius:18px;
+
+}
+
+.didYouKnow h3{
+
+font-size:36px;
+
+color:#d8bb68;
+
+margin-bottom:18px;
+
+}
+
+.didYouKnow p{
+
+margin:0;
+
+font-size:20px;
+
+line-height:1.9;
+
+}
+
+/* =========================
+MISSION
+========================= */
+
+.mission{
+
+margin-top:55px;
+
+}
+
+.mission h2{
+
+font-size:50px;
+
+font-family:'Cinzel',serif;
+
+margin-bottom:12px;
+
+}
+
+.mission p{
+
+margin-bottom:35px;
+
+}
+
+.answers{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+.answer{
+
+background:#1a2a22;
+
+border:2px solid rgba(255,255,255,.05);
+
+color:white;
+
+padding:28px;
+
+border-radius:18px;
+
+cursor:pointer;
+
+font-size:22px;
+
+transition:.3s;
+
+}
+
+.answer:hover{
+
+transform:translateY(-4px);
+
+border-color:#d6b55e;
+
+}
+
+.answer.correct{
+
+background:#239c52;
+
+border-color:#4cff90;
+
+}
+
+.answer.wrong{
+
+background:#a33232;
+
+border-color:#ff7c7c;
+
+}
+
+/* =========================
+NEXT BUTTON
+========================= */
+
+.nextButton{
+
+display:none;
+
+margin:50px auto 0;
+
+padding:18px 60px;
+
+background:#d4b15d;
+
+color:#111;
+
+border:none;
+
+border-radius:60px;
+
+font-size:22px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.nextButton:hover{
+
+transform:scale(1.05);
+
+}
+
+/* =========================
+TIMELINE
+========================= */
+
+.timelineGrid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:22px;
+
+margin-top:45px;
+
+}
+
+.timeCard{
+
+background:#1b2a23;
+
+padding:35px 20px;
+
+border-radius:22px;
+
+text-align:center;
+
+border:2px solid transparent;
+
+transition:.35s;
+
+}
+
+.timeCard.active{
+
+border-color:#d5b15a;
+
+background:#33453b;
+
+}
+
+.timeCard h3{
+
+font-family:'Cinzel',serif;
+
+font-size:30px;
+
+color:#d7b75d;
+
+margin-bottom:15px;
+
+}
+
+.timeCard p{
+
+margin:0;
+
+font-size:24px;
+
+}
+
+/* =========================
+TABLE
+========================= */
+
+table{
+
+width:100%;
+
+margin-top:45px;
+
+border-collapse:collapse;
+
+overflow:hidden;
+
+border-radius:20px;
+
+}
+
+th{
+
+background:#294132;
+
+padding:22px;
+
+font-size:22px;
+
+color:#d9bc67;
+
+}
+
+td{
+
+padding:22px;
+
+text-align:center;
+
+font-size:20px;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+background:#121715;
+
+}
+
+tr:hover td{
+
+background:#18211d;
+
+}
+
+/* =========================
+QUIZ
+========================= */
+
+.quizPage{
+
+text-align:center;
+
+}
+
+.quizDescription{
+
+max-width:900px;
+
+margin:35px auto;
+
+font-size:22px;
+
+line-height:1.9;
+
+}
+
+.quizStatus{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:45px 0;
+
+background:#18251f;
+
+padding:25px 35px;
+
+border-radius:20px;
+
+font-size:22px;
+
+}
+
+.quizStatus span{
+
+font-size:32px;
+
+font-weight:700;
+
+color:#d9b95c;
+
+}
+
+#quizBox{
+
+background:#101414;
+
+border-radius:25px;
+
+padding:45px;
+
+min-height:320px;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+}
+
+/* =========================
+CERTIFICATE
+========================= */
+
+.certificateFrame{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:80px;
+
+text-align:center;
+
+background:#fff8ea;
+
+color:#111;
+
+border:12px solid #c8a74d;
+
+border-radius:25px;
+
+}
+
+.certificateFrame h1{
+
+font-size:82px;
+
+font-family:'Cinzel',serif;
+
+margin:15px 0;
+
+}
+
+.certificateFrame h2{
+
+font-size:56px;
+
+font-family:'Cinzel',serif;
+
+margin:35px 0;
+
+}
+
+.certificateFrame h3{
+
+font-size:40px;
+
+color:#7b5b14;
+
+margin-bottom:40px;
+
+}
+
+.certificateScore{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+margin:50px 0;
+
+}
+
+.certificateButtons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.certificateButtons button{
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:#d5b45d;
+
+font-size:20px;
+
+font-weight:700;
+
+cursor:pointer;
+
+}
+
+/* =========================
+REFERENCES
+========================= */
+
+.referenceGrid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+margin-top:45px;
+
+}
+
+.referenceCard{
+
+background:#111616;
+
+padding:30px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.referenceCard h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+color:#d7b75c;
+
+}
+
+.referenceCard p{
+
+margin:0;
+
+line-height:1.8;
+
+}
+
+.finishButton{
+
+display:block;
+
+margin:60px auto;
+
+padding:22px 70px;
+
+border:none;
+
+border-radius:60px;
+
+background:#d6b35d;
+
+font-size:24px;
+
+font-weight:700;
+
+cursor:pointer;
+
+}
+
+.finishButton span{
+
+display:block;
+
+font-size:15px;
+
+margin-top:6px;
+
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+.split{
+
+grid-template-columns:1fr;
+
+}
+
+.timelineGrid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.answers{
+
+grid-template-columns:1fr;
+
+}
+
+.referenceGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:62px;
+
+}
+
+.report-title{
+
+font-size:54px;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.topBar{
+
+padding:0 20px;
+
+height:70px;
+
+}
+
+.logo{
+
+font-size:20px;
+
+}
+
+.progress{
+
+width:150px;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero h1 span{
+
+font-size:30px;
+
+}
+
+.report-title{
+
+font-size:40px;
+
+}
+
+.timelineGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.certificateFrame{
+
+padding:30px;
+
+}
+
+.certificateScore{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===========================================
+PATCH : HTML Compatibility
+วางท้าย style.css
+=========================================== */
+
+.museumHeader{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:80px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 45px;
+
+background:rgba(0,0,0,.82);
+
+backdrop-filter:blur(15px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+z-index:999;
+
+}
+
+.headerRight{
+
+display:flex;
+align-items:center;
+gap:18px;
+
+}
+
+.progressBox{
+
+width:240px;
+height:10px;
+
+background:#222;
+
+border-radius:50px;
+
+overflow:hidden;
+
+}
+
+#progressBar{
+
+height:100%;
+width:0%;
+
+background:linear-gradient(90deg,#4cd964,#d9b55d);
+
+transition:.35s;
+
+}
+
+.container{
+
+display:grid;
+
+grid-template-columns:430px 1fr;
+
+gap:60px;
+
+align-items:start;
+
+margin-top:40px;
+
+}
+
+.left{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.right{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.mainImage{
+
+width:100%;
+
+border-radius:22px;
+
+display:block;
+
+box-shadow:0 12px 40px rgba(0,0,0,.45);
+
+}
+
+.imageGrid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.imageGrid img{
+
+width:100%;
+height:150px;
+
+object-fit:cover;
+
+border-radius:16px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.imageGrid img:hover{
+
+transform:scale(1.05);
+
+}
+
+.factBox{
+
+background:#141919;
+
+padding:30px;
+
+border-radius:22px;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.factBox h2{
+
+font-family:Cinzel,serif;
+
+color:#d5b45d;
+
+margin-bottom:20px;
+
+}
+
+.factBox ul{
+
+list-style:none;
+
+}
+
+.factBox li{
+
+padding:15px 0;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+line-height:1.7;
+
+}
+
+.factBox li:last-child{
+
+border:none;
+
+}
+
+.info{
+
+background:#131818;
+
+padding:28px;
+
+border-radius:22px;
+
+border-left:5px solid #d5b45d;
+
+}
+
+.info h2{
+
+margin-bottom:15px;
+
+color:#d5b45d;
+
+font-family:Cinzel,serif;
+
+}
+
+.thai-title{
+
+font-size:.9rem;
+
+font-family:Poppins,sans-serif;
+
+font-weight:400;
+
+opacity:.8;
+
+}
+
+.bodyButtons{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:14px;
+
+margin:20px 0;
+
+}
+
+.bodyButtons button{
+
+padding:18px;
+
+border:none;
+
+border-radius:15px;
+
+background:#1b2823;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.bodyButtons button:hover{
+
+background:#d4b15d;
+
+color:#111;
+
+}
+
+#bodyInfo{
+
+margin-top:20px;
+
+padding:18px;
+
+background:#0f1212;
+
+border-radius:16px;
+
+}
+
+.choices{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.choices button{
+
+padding:20px;
+
+border:none;
+
+border-radius:18px;
+
+background:#1c2723;
+
+color:white;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.choices button:hover{
+
+transform:translateY(-3px);
+
+background:#d4b15d;
+
+color:#111;
+
+}
+
+.correct{
+
+background:#34a853!important;
+
+color:#fff!important;
+
+}
+
+.wrong{
+
+background:#d93025!important;
+
+color:#fff!important;
+
+}
+
+.nextButton{
+
+display:none;
+
+margin-top:25px;
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:#d4b15d;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+}
+
+.heroImage{
+
+width:min(700px,90%);
+
+display:block;
+
+margin:40px auto;
+
+}
+
+.heroCards{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:18px;
+
+margin:45px 0;
+
+}
+
+.heroCard{
+
+background:#151919;
+
+padding:22px;
+
+border-radius:18px;
+
+text-align:center;
+
+}
+
+.heroCard h3{
+
+margin-bottom:8px;
+
+color:#d4b15d;
+
+}
+
+.timeline{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:15px;
+
+margin-top:25px;
+
+}
+
+.timeCard{
+
+background:#19211d;
+
+padding:20px;
+
+border-radius:16px;
+
+text-align:center;
+
+}
+
+.activeTime{
+
+border:2px solid #d4b15d;
+
+}
+
+.compareTable{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+}
+
+.compareTable th{
+
+background:#29352d;
+
+padding:15px;
+
+}
+
+.compareTable td{
+
+padding:15px;
+
+background:#161b19;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.referenceGrid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.referenceCard{
+
+background:#141919;
+
+padding:25px;
+
+border-radius:18px;
+
+}
+
+.quizPage{
+
+display:block;
+
+text-align:center;
+
+}
+
+@media(max-width:1000px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.heroCards{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.timeline{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.referenceGrid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.heroCards{
+
+grid-template-columns:1fr;
+
+}
+
+.imageGrid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.timeline{
+
+grid-template-columns:1fr;
+
+}
+
+.choices{
+
+grid-template-columns:1fr;
+
+}
+
+.bodyButtons{
+
+grid-template-columns:1fr;
+
+}
+
+.museumHeader{
+
+padding:15px;
+
+}
+
+.progressBox{
+
+width:120px;
+
+}
+
+}
+
+/* ===================================================
+PART 1 - INTRO REMASTER
+=================================================== */
+
+.hero{
+
+position:relative !important;
+
+min-height:100vh !important;
+
+display:flex !important;
+
+justify-content:center !important;
+
+align-items:flex-start !important;
+
+flex-direction:column !important;
+
+padding:120px 8% 70px !important;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+rgba(5,8,8,.90),
+
+rgba(5,8,8,.60),
+
+rgba(5,8,8,.20)
+
+),
+
+url("images/kinnareemimus-full.png") !important;
+
+background-size:58% !important;
+
+background-repeat:no-repeat !important;
+
+background-position:right center !important;
+
+}
+
+.heroImage{
+
+display:none !important;
+
+}
+
+.hero h1{
+
+font-size:72px !important;
+
+margin:0 !important;
+
+line-height:1 !important;
+
+}
+
+.hero h2{
+
+font-size:30px !important;
+
+margin:10px 0 20px !important;
+
+color:#d9bc67 !important;
+
+font-style:italic;
+
+}
+
+.hero-thai{
+
+font-size:18px !important;
+
+max-width:620px !important;
+
+margin-bottom:25px !important;
+
+}
+
+.small{
+
+font-size:14px !important;
+
+letter-spacing:5px;
+
+color:#d9bc67;
+
+margin-bottom:12px;
+
+}
+
+.introCard{
+
+max-width:620px !important;
+
+padding:24px !important;
+
+background:rgba(18,20,20,.75) !important;
+
+backdrop-filter:blur(8px);
+
+border-left:5px solid #d9bc67;
+
+border-radius:20px;
+
+margin-bottom:28px;
+
+}
+
+.introCard p{
+
+font-size:17px !important;
+
+line-height:1.8 !important;
+
+margin:0 !important;
+
+}
+
+.heroCards{
+
+display:grid !important;
+
+grid-template-columns:repeat(3,170px) !important;
+
+gap:15px !important;
+
+margin-top:30px !important;
+
+margin-bottom:30px !important;
+
+}
+
+.heroCard{
+
+padding:18px !important;
+
+border-radius:18px !important;
+
+background:#151919 !important;
+
+transition:.3s;
+
+}
+
+.heroCard:hover{
+
+transform:translateY(-4px);
+
+}
+
+.mainButton{
+
+margin-top:10px !important;
+
+}
+
+/* ===================================================
+PART 2 - HEADER REMASTER
+=================================================== */
+
+.museumHeader{
+
+height:68px !important;
+
+padding:0 30px !important;
+
+background:rgba(8,10,10,.92)!important;
+
+backdrop-filter:blur(16px)!important;
+
+border-bottom:1px solid rgba(255,255,255,.06)!important;
+
+}
+
+.logo{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+.logo h1{
+
+font-size:24px !important;
+
+line-height:1 !important;
+
+margin:0 !important;
+
+letter-spacing:1px;
+
+}
+
+.logo p{
+
+font-size:11px !important;
+
+letter-spacing:3px;
+
+margin-top:5px;
+
+opacity:.8;
+
+}
+
+.headerRight{
+
+display:flex;
+
+align-items:center;
+
+gap:14px !important;
+
+}
+
+.progressBox{
+
+width:170px !important;
+
+height:8px !important;
+
+border-radius:100px;
+
+background:#242424 !important;
+
+}
+
+#progressBar{
+
+height:100%;
+
+border-radius:100px;
+
+background:linear-gradient(90deg,#41c96d,#d7b75d);
+
+}
+
+#progressText{
+
+font-size:13px !important;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+white-space:nowrap;
+
+color:#dadada;
+
+}
+
+.page{
+
+padding-top:90px !important;
+
+}
+
+/* ===== iPad ===== */
+
+@media(max-width:1024px){
+
+.logo h1{
+
+font-size:20px !important;
+
+}
+
+.logo p{
+
+display:none;
+
+}
+
+.progressBox{
+
+width:120px !important;
+
+}
+
+#progressText{
+
+font-size:11px !important;
+
+}
+
+}
+
+/* ===== Mobile ===== */
+
+@media(max-width:768px){
+
+.museumHeader{
+
+padding:0 15px !important;
+
+}
+
+.progressBox{
+
+display:none;
+
+}
+
+#progressText{
+
+font-size:10px !important;
+
+}
+
+.logo h1{
+
+font-size:18px !important;
+
+}
+
+}
+
+/* ===================================================
+PART 3 - CONTENT REMASTER
+=================================================== */
+
+.container{
+
+max-width:1380px !important;
+
+grid-template-columns:380px 1fr !important;
+
+gap:40px !important;
+
+align-items:flex-start !important;
+
+}
+
+.left{
+
+gap:18px !important;
+
+}
+
+.right{
+
+gap:20px !important;
+
+}
+
+/* ---------- รูป ---------- */
+
+.mainImage{
+
+border-radius:18px !important;
+
+max-height:480px;
+
+object-fit:cover;
+
+}
+
+.imageGrid{
+
+gap:10px !important;
+
+}
+
+.imageGrid img{
+
+height:120px !important;
+
+border-radius:12px !important;
+
+}
+
+/* ---------- กล่อง ---------- */
+
+.factBox{
+
+padding:22px !important;
+
+}
+
+.factBox h2{
+
+font-size:26px !important;
+
+}
+
+.factBox li{
+
+padding:11px 0 !important;
+
+font-size:15px !important;
+
+line-height:1.5 !important;
+
+}
+
+/* ---------- เนื้อหา ---------- */
+
+.field{
+
+font-size:13px !important;
+
+letter-spacing:4px !important;
+
+margin-bottom:10px !important;
+
+}
+
+.report-title{
+
+font-size:54px !important;
+
+line-height:1.05 !important;
+
+margin-bottom:8px !important;
+
+}
+
+.report-title span{
+
+font-size:20px !important;
+
+margin-top:6px !important;
+
+}
+
+.right>p:first-of-type,
+
+.info p{
+
+font-size:17px !important;
+
+line-height:1.9 !important;
+
+}
+
+.container p{
+
+font-size:17px !important;
+
+line-height:1.9 !important;
+
+}
+
+/* ---------- Card ---------- */
+
+.info{
+
+padding:22px !important;
+
+border-radius:18px !important;
+
+}
+
+.info h2{
+
+font-size:25px !important;
+
+margin-bottom:12px !important;
+
+}
+
+/* ---------- ปุ่มตอบ ---------- */
+
+.choices{
+
+gap:12px !important;
+
+}
+
+.choices button{
+
+padding:16px !important;
+
+font-size:15px !important;
+
+border-radius:14px !important;
+
+}
+
+.choices span{
+
+font-size:12px;
+
+}
+
+/* ---------- Next ---------- */
+
+.nextButton{
+
+padding:15px 34px !important;
+
+font-size:15px !important;
+
+}
+
+/* ---------- ตาราง ---------- */
+
+.compareTable th{
+
+font-size:15px !important;
+
+padding:12px !important;
+
+}
+
+.compareTable td{
+
+font-size:14px !important;
+
+padding:12px !important;
+
+}
+
+/* ---------- Timeline ---------- */
+
+.timeline{
+
+gap:10px !important;
+
+}
+
+.timeCard{
+
+padding:15px !important;
+
+}
+
+.timeCard h3{
+
+font-size:18px !important;
+
+}
+
+.timeCard p{
+
+font-size:13px !important;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:1100px){
+
+.container{
+
+grid-template-columns:1fr !important;
+
+}
+
+.mainImage{
+
+max-height:none;
+
+}
+
+.report-title{
+
+font-size:42px !important;
+
+}
+
+}
+
+/* ===================================================
+PART 4 - FINAL PAGE REMASTER
+=================================================== */
+
+/* ---------- Final Quiz ---------- */
+
+.quizPage{
+
+max-width:1050px !important;
+
+margin:auto !important;
+
+text-align:center;
+
+}
+
+.quizDescription{
+
+max-width:720px !important;
+
+margin:20px auto 35px !important;
+
+font-size:18px !important;
+
+line-height:1.8 !important;
+
+}
+
+.quizStatus{
+
+padding:18px 28px !important;
+
+border-radius:16px !important;
+
+font-size:17px !important;
+
+}
+
+.quizStatus span{
+
+font-size:24px !important;
+
+}
+
+#quizBox{
+
+padding:35px !important;
+
+border-radius:20px !important;
+
+min-height:240px !important;
+
+}
+
+/* ---------- Certificate ---------- */
+
+.certificateFrame{
+
+max-width:950px !important;
+
+padding:55px !important;
+
+border-radius:20px !important;
+
+}
+
+.certificateFrame h1{
+
+font-size:58px !important;
+
+margin:8px 0 18px !important;
+
+}
+
+.certificateFrame h2{
+
+font-size:40px !important;
+
+margin:20px 0 !important;
+
+}
+
+.certificateFrame h3{
+
+font-size:28px !important;
+
+margin-bottom:25px !important;
+
+}
+
+.certificateFrame p{
+
+font-size:17px !important;
+
+line-height:1.7 !important;
+
+}
+
+.certificateScore{
+
+margin:35px 0 !important;
+
+gap:20px !important;
+
+}
+
+.certificateButtons{
+
+justify-content:center !important;
+
+}
+
+/* ซ่อนปุ่ม Print */
+
+.certificateButtons button:first-child{
+
+display:none !important;
+
+}
+
+/* ปุ่ม References */
+
+.certificateButtons button:last-child{
+
+padding:15px 34px !important;
+
+font-size:16px !important;
+
+}
+
+/* ---------- References ---------- */
+
+.referenceGrid{
+
+gap:18px !important;
+
+}
+
+.referenceCard{
+
+padding:22px !important;
+
+border-radius:16px !important;
+
+transition:.25s;
+
+}
+
+.referenceCard:hover{
+
+transform:translateY(-4px);
+
+border-color:#d4b15d;
+
+}
+
+.referenceCard h3{
+
+font-size:22px !important;
+
+margin-bottom:10px !important;
+
+}
+
+.referenceCard p{
+
+font-size:15px !important;
+
+line-height:1.7 !important;
+
+}
+
+/* ---------- Return Home ---------- */
+
+.finishButton{
+
+margin-top:45px !important;
+
+padding:18px 48px !important;
+
+font-size:18px !important;
+
+}
+
+.finishButton span{
+
+font-size:13px !important;
+
+}
+
+/* ---------- Footer spacing ---------- */
+
+#references{
+
+padding-bottom:90px !important;
+
+}
+
+#certificate{
+
+padding-bottom:90px !important;
+
+}
+
+/* ===================================================
+PART 5 - FINAL POLISH
+=================================================== */
+
+/* ---------- Smooth ---------- */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+*{
+
+transition:
+
+background .25s,
+
+color .25s,
+
+transform .25s,
+
+box-shadow .25s,
+
+border-color .25s;
+
+}
+
+/* ---------- รูป ---------- */
+
+.mainImage,
+.imageGrid img{
+
+box-shadow:
+
+0 12px 30px rgba(0,0,0,.35);
+
+}
+
+.mainImage:hover{
+
+transform:scale(1.015);
+
+}
+
+.imageGrid img:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 8px 18px rgba(0,0,0,.45);
+
+}
+
+/* ---------- Card ---------- */
+
+.factBox,
+.info,
+.referenceCard,
+.heroCard{
+
+box-shadow:
+
+0 8px 18px rgba(0,0,0,.18);
+
+}
+
+.factBox:hover,
+.info:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+h2{
+
+text-wrap:balance;
+
+}
+
+.report-title{
+
+max-width:700px;
+
+}
+
+.report-title span{
+
+display:block;
+
+margin-top:8px;
+
+}
+
+/* ---------- Paragraph ---------- */
+
+.info p,
+.container p{
+
+text-align:justify;
+
+text-wrap:pretty;
+
+hyphens:auto;
+
+}
+
+/* ---------- Button ---------- */
+
+.mainButton,
+.nextButton,
+.finishButton{
+
+box-shadow:
+
+0 10px 22px rgba(212,177,93,.25);
+
+}
+
+.mainButton:hover,
+.nextButton:hover,
+.finishButton:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* ---------- Table ---------- */
+
+.compareTable tr{
+
+transition:.2s;
+
+}
+
+.compareTable tr:hover{
+
+background:#202724;
+
+}
+
+/* ---------- Timeline ---------- */
+
+.timeCard{
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.timeCard:hover{
+
+transform:translateY(-5px);
+
+border-color:#d5b15b;
+
+}
+
+/* ---------- Mission ---------- */
+
+.choices button{
+
+font-weight:600;
+
+}
+
+.choices button:hover{
+
+box-shadow:
+
+0 6px 18px rgba(212,177,93,.18);
+
+}
+
+/* ---------- Intro ---------- */
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+right:0;
+
+top:0;
+
+width:40%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+to left,
+
+rgba(5,8,8,.15),
+
+transparent
+
+);
+
+pointer-events:none;
+
+}
+
+/* ---------- Reference ---------- */
+
+.referenceCard{
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+/* ---------- Certificate ---------- */
+
+.certificateFrame{
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.45);
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px){
+
+.hero{
+
+background-size:75% !important;
+
+background-position:center top !important;
+
+padding-top:170px !important;
+
+}
+
+.heroCards{
+
+grid-template-columns:1fr 1fr !important;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.hero{
+
+background-size:90% !important;
+
+}
+
+.heroCards{
+
+grid-template-columns:1fr !important;
+
+}
+
+.report-title{
+
+font-size:34px !important;
+
+}
+
+.container p{
+
+font-size:16px !important;
+
+}
+
+}
+
+/* ===================================================
+PART 6 - TEXT FIX
+=================================================== */
+
+.right{
+
+max-width:860px !important;
+
+}
+
+.right > p{
+
+max-width:760px !important;
+
+}
+
+.info{
+
+max-width:760px !important;
+
+}
+
+.factBox{
+
+font-size:15px;
+
+}
+
+.factBox li{
+
+display:block;
+
+padding:10px 0 !important;
+
+}
+
+.report-title{
+
+max-width:720px !important;
+
+word-break:normal !important;
+
+}
+
+.report-title span{
+
+font-size:18px !important;
+
+line-height:1.4 !important;
+
+}
+
+.info h2{
+
+font-size:22px !important;
+
+line-height:1.4;
+
+}
+
+.info p{
+
+font-size:16px !important;
+
+line-height:1.85 !important;
+
+}
+
+.container p{
+
+font-size:16px !important;
+
+line-height:1.85 !important;
+
+}
+
+.choices button{
+
+min-height:72px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+}
+
+.choices button span{
+
+margin-top:5px;
+
+font-size:11px;
+
+opacity:.8;
+
+}
+
+.nextButton{
+
+min-width:220px;
+
+}
+
+/* ตาราง */
+
+.compareTable{
+
+table-layout:fixed;
+
+}
+
+.compareTable th,
+.compareTable td{
+
+word-break:break-word;
+
+}
+
+/* Timeline */
+
+.timeCard{
+
+min-height:120px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+}
+
+/* ===================================================
+PART 7 - MUSEUM POLISH
+=================================================== */
+
+/* ---------- พื้นหลัง ---------- */
+
+body{
+
+background:
+radial-gradient(circle at top,#1b241f 0%,#050707 45%,#020303 100%) !important;
+
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+padding-top:95px !important;
+
+padding-bottom:40px !important;
+
+background-size:52% !important;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+rgba(0,0,0,.75),
+
+rgba(0,0,0,.35),
+
+rgba(0,0,0,.05)
+
+);
+
+pointer-events:none;
+
+}
+
+.hero>*{
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* ---------- รูป ---------- */
+
+.mainImage{
+
+border:2px solid rgba(212,177,93,.25);
+
+}
+
+.imageGrid img{
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+/* ---------- Card ---------- */
+
+.info,
+.factBox,
+.referenceCard,
+.heroCard{
+
+background:rgba(20,25,25,.92)!important;
+
+border:1px solid rgba(212,177,93,.08);
+
+}
+
+/* ---------- Hover ---------- */
+
+.info:hover,
+.factBox:hover,
+.referenceCard:hover{
+
+border-color:rgba(212,177,93,.4);
+
+}
+
+/* ---------- เส้นใต้หัวข้อ ---------- */
+
+.info h2::after{
+
+content:"";
+
+display:block;
+
+width:55px;
+
+height:3px;
+
+margin-top:8px;
+
+background:#d4b15d;
+
+border-radius:50px;
+
+}
+
+/* ---------- Fact Box ---------- */
+
+.factBox li{
+
+display:flex;
+
+flex-direction:column;
+
+gap:2px;
+
+}
+
+/* ---------- Header ---------- */
+
+.museumHeader{
+
+box-shadow:
+
+0 8px 25px rgba(0,0,0,.35);
+
+}
+
+/* ---------- Scroll ---------- */
+
+.page{
+
+animation:fadeIn .45s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+/* ===================================================
+PART 8 - CERTIFICATE & REFERENCES
+=================================================== */
+
+/* ---------- Certificate ---------- */
+
+.certificateFrame{
+
+max-width:850px !important;
+
+padding:45px 50px !important;
+
+background:linear-gradient(
+180deg,
+#fffdf5,
+#f8f2df
+)!important;
+
+border:8px solid #caa64f !important;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.certificateFrame p{
+
+font-size:15px !important;
+
+line-height:1.8 !important;
+
+}
+
+.certificateFrame h1{
+
+font-size:48px !important;
+
+letter-spacing:3px;
+
+}
+
+.certificateFrame h2{
+
+font-size:34px !important;
+
+margin:18px 0 !important;
+
+}
+
+.certificateFrame h3{
+
+font-size:24px !important;
+
+margin-bottom:18px !important;
+
+}
+
+.certificateScore{
+
+margin-top:30px !important;
+
+margin-bottom:25px !important;
+
+}
+
+/* ซ่อนปุ่ม Print */
+
+.certificateButtons button:first-child{
+
+display:none !important;
+
+}
+
+/* ปุ่มเดียวตรงกลาง */
+
+.certificateButtons{
+
+justify-content:center !important;
+
+}
+
+.certificateButtons button{
+
+padding:14px 36px !important;
+
+font-size:16px !important;
+
+}
+
+/* ---------- References ---------- */
+
+.referenceGrid{
+
+display:grid;
+
+grid-template-columns:repeat(2,minmax(280px,1fr));
+
+gap:18px;
+
+margin-top:30px !important;
+
+}
+
+.referenceCard{
+
+position:relative;
+
+padding:22px 22px 22px 55px !important;
+
+overflow:hidden;
+
+}
+
+.referenceCard::before{
+
+content:"📚";
+
+position:absolute;
+
+left:18px;
+
+top:22px;
+
+font-size:22px;
+
+opacity:.8;
+
+}
+
+.referenceCard h3{
+
+font-size:20px !important;
+
+margin-bottom:8px !important;
+
+}
+
+.referenceCard p{
+
+font-size:14px !important;
+
+line-height:1.7 !important;
+
+opacity:.9;
+
+}
+
+.finishButton{
+
+margin-top:35px !important;
+
+padding:16px 42px !important;
+
+font-size:17px !important;
+
+}
+
+/* ===================================================
+PART 9 - FINAL POLISH
+=================================================== */
+
+/* ---------- Hover Animation ---------- */
+
+.heroCard,
+.referenceCard,
+.info,
+.factBox,
+.timeCard{
+
+transition:all .28s ease;
+
+}
+
+.heroCard:hover,
+.referenceCard:hover,
+.info:hover,
+.factBox:hover,
+.timeCard:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+
+0 14px 35px rgba(0,0,0,.28);
+
+}
+
+/* ---------- Image ---------- */
+
+.mainImage{
+
+transition:.35s;
+
+}
+
+.mainImage:hover{
+
+transform:scale(1.02);
+
+}
+
+.imageGrid img{
+
+transition:.3s;
+
+filter:brightness(.96);
+
+}
+
+.imageGrid img:hover{
+
+filter:brightness(1.08);
+
+transform:scale(1.05);
+
+}
+
+/* ---------- Title ---------- */
+
+.report-title{
+
+letter-spacing:.5px;
+
+}
+
+.field{
+
+opacity:.8;
+
+}
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#b69243;
+
+border-radius:100px;
+
+}
+
+/* ---------- Quiz ---------- */
+
+#quizBox button{
+
+margin:8px;
+
+}
+
+#quizBox h2{
+
+font-size:30px;
+
+line-height:1.4;
+
+margin-bottom:25px;
+
+}
+
+/* ---------- Result ---------- */
+
+[id^="result"]{
+
+margin-top:18px;
+
+font-size:17px;
+
+font-weight:600;
+
+}
+
+/* ---------- Button ---------- */
+
+.mainButton,
+.nextButton,
+.finishButton{
+
+transition:.28s;
+
+}
+
+.mainButton:hover,
+.nextButton:hover,
+.finishButton:hover{
+
+filter:brightness(1.05);
+
+}
+
+/* ---------- Header ---------- */
+
+.logo{
+
+user-select:none;
+
+}
+
+#progressText{
+
+min-width:130px;
+
+text-align:right;
+
+}
+
+/* ---------- Footer ---------- */
+
+#references{
+
+padding-bottom:120px;
+
+}
+
+#certificate{
+
+padding-bottom:120px;
+
+}
+
+/* ---------- Selection ---------- */
+
+::selection{
+
+background:#d4b15d;
+
+color:#111;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:1200px){
+
+.hero{
+
+background-size:60%!important;
+
+}
+
+.container{
+
+grid-template-columns:350px 1fr!important;
+
+gap:30px!important;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+background-size:72%!important;
+
+background-position:center top!important;
+
+padding-top:180px!important;
+
+}
+
+.heroCards{
+
+grid-template-columns:1fr 1fr!important;
+
+}
+
+.container{
+
+grid-template-columns:1fr!important;
+
+}
+
+.left{
+
+order:1;
+
+}
+
+.right{
+
+order:2;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.heroCards{
+
+grid-template-columns:1fr!important;
+
+}
+
+.hero{
+
+background-size:90%!important;
+
+}
+
+.mainButton{
+
+width:100%;
+
+}
+
+.nextButton{
+
+width:100%;
+
+}
+
+.finishButton{
+
+width:100%;
+
+}
+
+.referenceGrid{
+
+grid-template-columns:1fr!important;
+
+}
+
+}
+
+/* ===================================================
+FINAL PATCH 1
+Text Alignment + Better Readability
+=================================================== */
+
+/* เนื้อหาฝั่งขวา */
+
+.right{
+max-width:900px!important;
+}
+
+/* ย่อหน้า */
+
+.right p,
+.info p,
+.introCard p,
+.quizDescription{
+
+text-align:left!important;
+line-height:1.95!important;
+letter-spacing:.2px;
+word-spacing:.5px;
+
+}
+
+/* ภาษาไทย */
+
+.hero-thai,
+.thai-title{
+
+font-weight:500;
+
+}
+
+/* หัวข้อ */
+
+.report-title{
+
+max-width:760px;
+line-height:1.12!important;
+
+}
+
+.report-title span{
+
+margin-top:8px!important;
+font-size:19px!important;
+font-weight:400;
+
+}
+
+/* FACT */
+
+.factBox li{
+
+display:flex;
+flex-direction:column;
+gap:4px;
+
+}
+
+/* Did you know */
+
+.info h2{
+
+display:flex;
+flex-direction:column;
+gap:4px;
+
+}
+
+/* ปุ่มคำตอบ */
+
+.choices button{
+
+line-height:1.45;
+padding:18px 16px!important;
+
+}
+
+.choices button span{
+
+margin-top:6px;
+display:block;
+font-size:12px;
+opacity:.75;
+
+}
+
+/* ===================================================
+FINAL PATCH 2
+REFERENCES PAGE
+=================================================== */
+
+#references .container{
+
+display:flex!important;
+flex-direction:column;
+align-items:center;
+
+}
+
+/* หัวข้อ */
+
+#references .field{
+
+align-self:flex-start;
+
+}
+
+#references .report-title{
+
+align-self:flex-start;
+margin-bottom:30px;
+
+}
+
+/* Grid */
+
+.referenceGrid{
+
+width:100%;
+
+display:grid!important;
+
+grid-template-columns:repeat(2,minmax(320px,1fr));
+
+gap:24px;
+
+margin-top:10px!important;
+margin-bottom:50px!important;
+
+}
+
+/* Card */
+
+.referenceCard{
+
+min-height:180px;
+
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+
+padding:26px!important;
+
+}
+
+/* หัวข้อ */
+
+.referenceCard h3{
+
+line-height:1.35!important;
+
+}
+
+/* เนื้อหา */
+
+.referenceCard p{
+
+margin-top:10px!important;
+
+line-height:1.8!important;
+
+text-align:left!important;
+
+}
+
+/* ปุ่ม Return Home */
+
+.finishButton{
+
+display:block!important;
+
+margin:10px auto 0!important;
+
+position:relative!important;
+
+z-index:10;
+
+}
+
+/* iPad */
+
+@media(max-width:1000px){
+
+.referenceGrid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===================================================
+FINAL PATCH 3
+Reference Card Fix + Bilingual + Typography
+=================================================== */
+
+/* ---------- Reference Card ---------- */
+
+.referenceCard h3{
+    position: relative !important;
+    padding-left: 42px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+}
+
+.referenceCard h3::before{
+    content: "📚";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 22px;
+}
+
+.referenceCard p{
+    line-height: 1.8 !important;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+/* ถ้า HTML ยังมี 📚 อยู่ ให้ซ่อนไปเลย */
+
+.referenceCard h3{
+    text-indent: 0;
+}
+
+/* ---------- Thai Subtitle ---------- */
+
+.report-title span,
+.section-title span,
+.subtitle-th{
+    display:block;
+    margin-top:8px;
+    font-size:18px;
+    font-weight:400;
+    opacity:.88;
+}
+
+/* ---------- Paragraph ---------- */
+
+.report-text,
+.info p,
+.description,
+.content p{
+
+    text-align:left;
+
+    line-height:1.95;
+
+    letter-spacing:.2px;
+
+    word-spacing:.5px;
+
+}
+
+/* ---------- Quiz ---------- */
+
+.quizQuestion{
+
+    line-height:1.6;
+
+}
+
+.quizChoice{
+
+    line-height:1.45;
+
+}
+
+/* ---------- Certificate ---------- */
+
+.certificate p{
+
+    line-height:1.8;
+
+}
+
+/* ---------- Better English ---------- */
+
+h1,h2,h3{
+
+    letter-spacing:.3px;
+
+}
+
+/* ===================================================
+FINAL PATCH 4
+Reference Cards
+=================================================== */
+
+.referenceCard h3{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+
+    font-size:2rem;
+    line-height:1.35;
+
+    margin-bottom:18px;
+
+    padding:0 !important;
+}
+
+.referenceCard h3::before{
+
+    content:"📚";
+
+    flex-shrink:0;
+
+    font-size:1.6rem;
+
+    line-height:1;
+
+    margin-top:4px;
+
+}
+
+.referenceCard p{
+
+    margin-left:0;
+
+    line-height:1.85;
+
+    opacity:.9;
+
+}
+
+/* กันไม่ให้ emoji ไปทับตัวหนังสือ */
+
+.referenceCard{
+
+    overflow:hidden;
+
+}
+
+.referenceCard h3{
+
+    word-break:break-word;
+
+}
+
+/* ===================================================
+FINAL PATCH 5
+Museum Typography
+=================================================== */
+
+/* ---------- Paragraph ---------- */
+
+.right p,
+.info p,
+.introCard p{
+
+max-width:760px;
+
+font-size:16px;
+
+line-height:2.05;
+
+letter-spacing:.15px;
+
+word-spacing:.4px;
+
+text-align:left;
+
+}
+
+/* ---------- Head ---------- */
+
+.report-title{
+
+margin-bottom:18px!important;
+
+}
+
+.report-title span{
+
+margin-top:10px!important;
+
+display:block;
+
+opacity:.82;
+
+font-size:19px!important;
+
+}
+
+/* ---------- Card ---------- */
+
+.info{
+
+padding:26px!important;
+
+}
+
+.info h2{
+
+margin-bottom:16px!important;
+
+}
+
+.info p{
+
+margin-bottom:0!important;
+
+}
+
+/* ---------- FACT ---------- */
+
+.factBox li{
+
+padding:12px 0!important;
+
+}
+
+/* ---------- Table ---------- */
+
+.compareTable td{
+
+vertical-align:middle;
+
+}
+
+.compareTable th{
+
+vertical-align:middle;
+
+}
+
+/* ---------- Timeline ---------- */
+
+.timeCard{
+
+justify-content:center;
+
+}
+
+.timeCard h3{
+
+margin-bottom:8px;
+
+}
+
+/* ---------- Quiz ---------- */
+
+.quizStatus{
+
+gap:30px;
+
+}
+
+.quizStatus div{
+
+padding:8px 14px;
+
+}
+
+/* ---------- Certificate ---------- */
+
+.certificateFrame h2{
+
+font-size:46px!important;
+
+letter-spacing:2px;
+
+}
+
+.certificateFrame h3{
+
+letter-spacing:1px;
+
+}
+
+/* ---------- Hero ---------- */
+
+.heroCard h3{
+
+margin-bottom:8px;
+
+}
+
+.heroCard span{
+
+opacity:.85;
+
+}
+
+/* ---------- Button ---------- */
+
+.mainButton span,
+.nextButton span,
+.finishButton span{
+
+opacity:.82;
+
+}
+
+/* ===================================================
+FINAL PATCH 6
+Release Candidate
+=================================================== */
+
+/* ---------- ทุกย่อหน้า ---------- */
+
+.right p,
+.info p,
+.introCard p,
+.referenceCard p{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:left;
+
+    line-height:2.05;
+
+    letter-spacing:.15px;
+
+}
+
+/* ---------- กล่อง ---------- */
+
+.info{
+
+    border-radius:18px;
+
+}
+
+.factBox{
+
+    border-radius:18px;
+
+}
+
+/* ---------- รูป ---------- */
+
+.mainImage{
+
+    border-radius:18px;
+
+}
+
+.imageGrid img{
+
+    border-radius:12px;
+
+}
+
+/* ---------- Report ---------- */
+
+.field{
+
+    opacity:.72;
+
+    letter-spacing:5px;
+
+}
+
+/* ---------- H2 ---------- */
+
+.info h2{
+
+    line-height:1.3;
+
+}
+
+/* ---------- Hero ---------- */
+
+.heroCards{
+
+    margin-top:30px;
+
+    margin-bottom:35px;
+
+}
+
+.heroCard{
+
+    min-height:95px;
+
+    justify-content:center;
+
+}
+
+/* ---------- Mission ---------- */
+
+.choices{
+
+    margin-top:18px;
+
+}
+
+.choices button{
+
+    min-height:82px;
+
+}
+
+/* ---------- Result ---------- */
+
+[id^="result"]{
+
+    line-height:1.7;
+
+}
+
+/* ---------- Next ---------- */
+
+.nextButton{
+
+    margin-top:24px;
+
+}
+
+/* ---------- Quiz ---------- */
+
+.quizStatus{
+
+    border-radius:16px;
+
+}
+
+#quizBox{
+
+    border-radius:18px;
+
+}
+
+/* ---------- Certificate ---------- */
+
+.certificateFrame{
+
+    overflow:hidden;
+
+}
+
+.certificateButtons{
+
+    margin-top:35px;
+
+}
+
+/* ---------- Reference ---------- */
+
+.referenceGrid{
+
+    align-items:stretch;
+
+}
+
+.referenceCard{
+
+    min-height:170px;
+
+}
+
+.finishButton{
+
+    margin-top:35px!important;
+
+}
+
+/* ---------- Hover ---------- */
+
+.mainButton:hover,
+.nextButton:hover,
+.finishButton:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.subTitle{
+
+    margin-top:8px;
+
+    margin-bottom:8px;
+
+    color:#c8a857;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    line-height:1.5;
+
+    opacity:.95;
+
+}
+
+.referenceCard h3{
+
+    display:block !important;
+
+    position:relative;
+
+    text-align:center;
+
+    padding:0 20px !important;
+
+}
+
+.referenceCard h3::before{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:28px;
+
+}
+
+/* Timeline + Table Subtitle */
+
+.timeline h3 .thai-title,
+.compareTable th .thai-title,
+.compareTable td .thai-title{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    color:#d4b15c;
+
+    opacity:.9;
+
+}
+
+.choices button span{
+    display:block;
+    margin-top:6px;
+    font-size:13px;
+    font-weight:400;
+    color:#d4b15c;
+    opacity:.9;
+}
